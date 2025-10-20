@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App.MainPage">
-
+             xmlns:strings="clr-namespace:App.Resources.Strings"
+             x:Class="App.MainPage"
+            Title="{x:Static strings:LangResources.welcome}">
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
@@ -26,11 +27,15 @@
 
             <Button
                 x:Name="CounterBtn"
-                Text="Click me" 
+                Text="Click me"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
+
+            <Button Text="{x:Static strings:LangResources.welcome}"
+                 WidthRequest="300"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Start" />
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>

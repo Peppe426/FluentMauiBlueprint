@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFrameworks>net9.0-android;net9.0-ios;net9.0-maccatalyst</TargetFrameworks>
@@ -60,8 +60,30 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<EmbeddedResource Update="Resources\Strings\LangResources.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>LangResources.Designer.cs</LastGenOutput>
+			<CustomToolNamespace>App.Resources.Strings</CustomToolNamespace>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Resources\Strings\LangResources.sv.resx">
+			<DependentUpon>LangResources.resx</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Resources\Strings\LangResources.de.resx">
+			<DependentUpon>LangResources.resx</DependentUpon>
+		</EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.120" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.10" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Resources\Strings\LangResources.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>LangResources.resx</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 </Project>
