@@ -4,11 +4,51 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:App"
-    Title="App">
+    xmlns:pages="clr-namespace:App.Pages"
+    Title="App"
+    FlyoutBehavior="Locked">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <!-- Optional Flyout Header -->
+    <Shell.FlyoutHeader>
+        <Grid HeightRequest="80" BackgroundColor="Transparent" Padding="16">
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnUserHeaderTapped" NumberOfTapsRequired="1" />
+            </Grid.GestureRecognizers>
+            <HorizontalStackLayout Spacing="12" VerticalOptions="Center">
+                <!-- Circular user avatar -->
+                <Image Source="dotnet_bot.png" HeightRequest="40" WidthRequest="40">
+                    <Image.Clip>
+                        <EllipseGeometry Center="20,20" RadiusX="20" RadiusY="20" />
+                    </Image.Clip>
+                </Image>
+                <VerticalStackLayout Spacing="0" VerticalOptions="Center">
+                    <Label Text="John Doe" FontSize="16" />
+                    <Label Text="View profile" FontSize="12" Opacity="0.7" />
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </Grid>
+    </Shell.FlyoutHeader>
+
+    <!-- Left-side navigation (Flyout) -->
+    <FlyoutItem Title="Home" Icon="dotnet_bot.png">
+        <ShellContent
+            Title="Home"
+            Route="home"
+            ContentTemplate="{DataTemplate local:MainPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Register" Icon="dotnet_bot.png">
+        <ShellContent
+            Title="Register"
+            Route="register"
+            ContentTemplate="{DataTemplate pages:RegisterPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="User" Icon="dotnet_bot.png">
+        <ShellContent
+            Title="User"
+            Route="user"
+            ContentTemplate="{DataTemplate pages:UserPage}" />
+    </FlyoutItem>
 
 </Shell>
