@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:viewModels="clr-namespace:App.ViewModels"
+             xmlns:strings="clr-namespace:App.Resources.Strings"
+             x:Class="App.Pages.RegisterPage"
+             x:DataType="viewModels:PersonViewModel"
+             Title="{x:Static strings:LangResources.registerTitle}">
+
+    <ContentPage.BindingContext>
+        <viewModels:PersonViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <Style x:Key="ValidStyle" TargetType="Entry">
+            <Setter Property="TextColor" Value="Green" />
+        </Style>
+        <Style x:Key="InvalidStyle" TargetType="Entry">
+            <Setter Property="TextColor" Value="Red" />
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="10">
+            <Label Text="{x:Static strings:LangResources.labelPersonalNumber}" />
+            <Entry Placeholder="{x:Static strings:LangResources.phPersonalNumber}"
+                   Text="{Binding PersonalNumber}"
+                   Keyboard="Text">
+                <Entry.Behaviors>
+                    <toolkit:TextValidationBehavior x:Name="pnValidation"
+                        Flags="ValidateOnValueChanged"
+                        RegexPattern="^(\d{8}|\d{6})[-\s]\d{4}$|^\d{11}$|^[A-Za-z0-9]{9,12}$" />
+                </Entry.Behaviors>
+                <Entry.Triggers>
+                    <DataTrigger TargetType="Entry"
+                                 Binding="{Binding Source={x:Reference pnValidation}, Path=IsValid}"
+                                 Value="True">
+                        <Setter Property="Style" Value="{StaticResource ValidStyle}" />
+                    </DataTrigger>
+                    <DataTrigger TargetType="Entry"
+                                 Binding="{Binding Source={x:Reference pnValidation}, Path=IsValid}"
+                                 Value="False">
+                        <Setter Property="Style" Value="{StaticResource InvalidStyle}" />
+                    </DataTrigger>
+                </Entry.Triggers>
+            </Entry>
+
+         <Label Text="{x:Static strings:LangResources.labelFirstName}" />
+         <Entry Placeholder="{x:Static strings:LangResources.phFirstName}"
+                   Text="{Binding FirstName}">
+                <Entry.Behaviors>
+                    <toolkit:TextValidationBehavior x:Name="fnValidation"
+                        Flags="ValidateOnValueChanged"
+                        MinimumLength="2"
+                        RegexPattern="^.{2,}$" />
+                </Entry.Behaviors>
+                <Entry.Triggers>
+                    <DataTrigger TargetType="Entry"
+                                 Binding="{Binding Source={x:Reference fnValidation}, Path=IsValid}"
+                                 Value="True">
+                        <Setter Property="Style" Value="{StaticResource ValidStyle}" />
+                    </DataTrigger>
+                    <DataTrigger TargetType="Entry"
+                                 Binding="{Binding Source={x:Reference fnValidation}, Path=IsValid}"
+                                 Value="False">
+                        <Setter Property="Style" Value="{StaticResource InvalidStyle}" />
+                    </DataTrigger>
+                </Entry.Triggers>
+            </Entry>
+
+         <Label Text="{x:Static strings:LangResources.labelLastName}" />
+         <Entry Placeholder="{x:Static strings:LangResources.phLastName}"
+                   Text="{Binding LastName}">
+                <Entry.Behaviors>
+                    <toolkit:TextValidationBehavior x:Name="lnValidation"
+                        Flags="ValidateOnValueChanged"
+                        MinimumLength="2"
+                        RegexPattern="^.{2,}$" />
+                </Entry.Behaviors>
+                <Entry.Triggers>
+                    <DataTrigger TargetType="Entry"
+                                 Binding="{Binding Source={x:Reference lnValidation}, Path=IsValid}"
+                                 Value="True">
+                        <Setter Property="Style" Value="{StaticResource ValidStyle}" />
+                    </DataTrigger>
+                    <DataTrigger TargetType="Entry"
+                                 Binding="{Binding Source={x:Reference lnValidation}, Path=IsValid}"
+                                 Value="False">
+                        <Setter Property="Style" Value="{StaticResource InvalidStyle}" />
+                    </DataTrigger>
+                </Entry.Triggers>
+            </Entry>
+
+         <Label Text="{x:Static strings:LangResources.labelPhone}" />
+         <Entry Placeholder="{x:Static strings:LangResources.phPhone}"
+                   Text="{Binding PhoneNumber}"
+                   Keyboard="Telephone">
+                <Entry.Behaviors>
+                    <toolkit:MaskedBehavior Mask="(000) 000-0000" />
+                    <toolkit:TextValidationBehavior x:Name="phValidation"
+                                                    Flags="ValidateOnValueChanged"
+                                                    RegexPattern="^\(\d{3}\) \d{3}-\d{4}$" />
+                </Entry.Behaviors>
+                <Entry.Triggers>
+                    <DataTrigger TargetType="Entry"
+                                 Binding="{Binding Source={x:Reference phValidation}, Path=IsValid}"
+                                 Value="True">
+                        <Setter Property="Style" Value="{StaticResource ValidStyle}" />
+                    </DataTrigger>
+                    <DataTrigger TargetType="Entry"
+                                 Binding="{Binding Source={x:Reference phValidation}, Path=IsValid}"
+                                 Value="False">
+                        <Setter Property="Style" Value="{StaticResource InvalidStyle}" />
+                    </DataTrigger>
+                </Entry.Triggers>
+            </Entry>
+
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="10" Margin="0,10,0,0">
+        <Button Text="{x:Static strings:LangResources.btnSubmit}"
+                        Grid.Column="0">
+                    <Button.Behaviors>
+                        <toolkit:EventToCommandBehavior EventName="Clicked"
+                                                        Command="{Binding SubmitCommand}" />
+                    </Button.Behaviors>
+                </Button>
+        <Button Text="{x:Static strings:LangResources.btnClear}"
+                        Grid.Column="1"
+                        Command="{Binding ClearCommand}" />
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
