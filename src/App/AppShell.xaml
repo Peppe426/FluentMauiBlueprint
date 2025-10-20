@@ -51,4 +51,19 @@
             ContentTemplate="{DataTemplate pages:UserPage}" />
     </FlyoutItem>
 
+    
+
+    <!-- Footer item to place Settings at the bottom of flyout -->
+    <Shell.FlyoutFooter>
+        <Grid Padding="12">
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnSettingsClicked" NumberOfTapsRequired="1" />
+            </Grid.GestureRecognizers>
+            <HorizontalStackLayout Spacing="12" VerticalOptions="Center">
+                <Image Source="settings.png" HeightRequest="20" WidthRequest="20" />
+                <Label Text="{Binding SettingsTitle}" FontSize="14" VerticalTextAlignment="Center" />
+            </HorizontalStackLayout>
+        </Grid>
+    </Shell.FlyoutFooter>
+
 </Shell>
