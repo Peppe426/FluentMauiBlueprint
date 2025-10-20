@@ -13,11 +13,11 @@ public partial class AppShell : Shell
 
     private async void OnUserHeaderTapped(object? sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("//user");
+        await Shell.Current.GoToAsync("//user", false);
     }
 
     private async void OnSettingsClicked(object? sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("settings");
+        await Shell.Current.GoToAsync("settings", false);
     }
 }
