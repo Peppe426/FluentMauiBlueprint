@@ -22,7 +22,8 @@
     </ContentPage.Resources>
 
     <ScrollView>
-        <StackLayout Padding="20" Spacing="10">
+        <Border Style="{StaticResource PageContainerStyle}">
+        <StackLayout Spacing="10">
             <Label Text="{x:Static strings:LangResources.labelPersonalNumber}" />
             <Entry Placeholder="{x:Static strings:LangResources.phPersonalNumber}"
                    Text="{Binding PersonalNumber}"
@@ -129,5 +130,6 @@
                         Command="{Binding ClearCommand}" />
             </Grid>
         </StackLayout>
+        </Border>
     </ScrollView>
 </ContentPage>

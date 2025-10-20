@@ -10,13 +10,17 @@
         <viewModels:UserViewModel />
     </ContentPage.BindingContext>
 
-    <VerticalStackLayout Padding="24" Spacing="16">
-        <Grid WidthRequest="120" HeightRequest="120" HorizontalOptions="Center">
-            <Image Source="{Binding Image}" Aspect="AspectFill" />
-            <Grid.Clip>
-                <EllipseGeometry Center="60,60" RadiusX="60" RadiusY="60" />
-            </Grid.Clip>
-        </Grid>
-        <Label Text="{Binding UserName}" FontSize="24" HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ScrollView>
+        <Border Style="{StaticResource PageContainerStyle}">
+        <VerticalStackLayout Spacing="16">
+            <Grid WidthRequest="120" HeightRequest="120" HorizontalOptions="Center">
+                <Image Source="{Binding Image}" Aspect="AspectFill" />
+                <Grid.Clip>
+                    <EllipseGeometry Center="60,60" RadiusX="60" RadiusY="60" />
+                </Grid.Clip>
+            </Grid>
+            <Label Text="{Binding UserName}" FontSize="24" HorizontalOptions="Center" />
+        </VerticalStackLayout>
+        </Border>
+    </ScrollView>
 </ContentPage>

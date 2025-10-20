@@ -4,7 +4,8 @@
              x:Class="App.Pages.SettingsPage"
              Title="{Binding SettingsTitle}">
     <ScrollView>
-        <VerticalStackLayout Padding="16" Spacing="16">
+        <Border Style="{StaticResource PageContainerStyle}">
+        <VerticalStackLayout Spacing="16">
             <Label Text="{Binding ThemeTitle}" FontAttributes="Bold" />
         <Picker ItemsSource="{Binding ThemeOptions}"
             ItemDisplayBinding="{Binding Display}"
@@ -15,5 +16,6 @@
             ItemDisplayBinding="{Binding Display}"
             SelectedItem="{Binding SelectedLanguageOption, Mode=TwoWay}" />
         </VerticalStackLayout>
+        </Border>
     </ScrollView>
 </ContentPage>
