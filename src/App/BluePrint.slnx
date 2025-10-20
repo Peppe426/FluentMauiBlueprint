@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Tests/">
+    <Project Path="../TestBase/TestBase.csproj" />
+  </Folder>
+  <Project Path="App.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+</Solution>
