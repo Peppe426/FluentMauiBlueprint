@@ -4,6 +4,7 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:App"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
     xmlns:pages="clr-namespace:App.Pages"
     Title="App"
     FlyoutBehavior="Locked">
@@ -15,12 +16,13 @@
                 <TapGestureRecognizer Tapped="OnUserHeaderTapped" NumberOfTapsRequired="1" />
             </Grid.GestureRecognizers>
             <HorizontalStackLayout Spacing="12" VerticalOptions="Center">
-                <!-- Circular user avatar -->
-                <Image Source="dotnet_bot.png" HeightRequest="40" WidthRequest="40">
-                    <Image.Clip>
-                        <EllipseGeometry Center="20,20" RadiusX="20" RadiusY="20" />
-                    </Image.Clip>
-                </Image>
+                <!-- Avatar using .NET MAUI Community Toolkit -->
+                <toolkit:AvatarView HeightRequest="40"
+                                    WidthRequest="40"
+                                    CornerRadius="20"
+                                    ImageSource="dotnet_bot.png"
+                                    BorderWidth="1"
+                                    BorderColor="{AppThemeBinding Light={StaticResource DividerLight}, Dark={StaticResource DividerDark}}" />
                 <VerticalStackLayout Spacing="0" VerticalOptions="Center">
                     <Label Text="John Doe" FontSize="16" />
                     <Label Text="View profile" FontSize="12" Opacity="0.7" />
