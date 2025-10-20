@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.Pages.SettingsPage"
+             Title="{Binding SettingsTitle}">
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="16">
+            <Label Text="{Binding ThemeTitle}" FontAttributes="Bold" />
+        <Picker ItemsSource="{Binding ThemeOptions}"
+            ItemDisplayBinding="{Binding Display}"
+            SelectedItem="{Binding SelectedThemeOption, Mode=TwoWay}" />
+
+            <Label Text="{Binding LanguageTitle}" FontAttributes="Bold" />
+        <Picker ItemsSource="{Binding LanguageOptions}"
+            ItemDisplayBinding="{Binding Display}"
+            SelectedItem="{Binding SelectedLanguageOption, Mode=TwoWay}" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
