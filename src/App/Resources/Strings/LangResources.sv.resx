@@ -15,4 +15,49 @@
   <data name="welcome" xml:space="preserve">
     <value>Välkommen</value>
   </data>
+  <data name="welcomeMessage" xml:space="preserve">
+    <value>Välkommen till appen. Fortsätt till registreringsformuläret.</value>
+  </data>
+  <data name="goToRegister" xml:space="preserve">
+    <value>Gå till registrering</value>
+  </data>
+  <data name="registerTitle" xml:space="preserve">
+    <value>Registreringsformulär</value>
+  </data>
+  <data name="labelPersonalNumber" xml:space="preserve">
+    <value>Personnummer</value>
+  </data>
+  <data name="phPersonalNumber" xml:space="preserve">
+    <value>ÅÅÅÅMMDD-XXXX eller ÅÅMMDD-XXXX eller 11 siffror eller 9–12 alfanumeriska</value>
+  </data>
+  <data name="labelFirstName" xml:space="preserve">
+    <value>Förnamn</value>
+  </data>
+  <data name="phFirstName" xml:space="preserve">
+    <value>Ange förnamn</value>
+  </data>
+  <data name="labelLastName" xml:space="preserve">
+    <value>Efternamn</value>
+  </data>
+  <data name="phLastName" xml:space="preserve">
+    <value>Ange efternamn</value>
+  </data>
+  <data name="labelPhone" xml:space="preserve">
+    <value>Telefonnummer</value>
+  </data>
+  <data name="phPhone" xml:space="preserve">
+    <value>(123) 456-7890</value>
+  </data>
+  <data name="btnSubmit" xml:space="preserve">
+    <value>Skicka</value>
+  </data>
+  <data name="btnClear" xml:space="preserve">
+    <value>Rensa</value>
+  </data>
+  <data name="alertSubmitTitle" xml:space="preserve">
+    <value>Formulär skickat</value>
+  </data>
+  <data name="alertValidationTitle" xml:space="preserve">
+    <value>Valideringsfel</value>
+  </data>
 </root>

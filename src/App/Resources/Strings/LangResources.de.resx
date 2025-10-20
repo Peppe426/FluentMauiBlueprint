@@ -15,4 +15,49 @@
   <data name="welcome" xml:space="preserve">
     <value>Willkommen</value>
   </data>
+  <data name="welcomeMessage" xml:space="preserve">
+    <value>Willkommen in der App. Bitte fahren Sie mit dem Registrierungsformular fort.</value>
+  </data>
+  <data name="goToRegister" xml:space="preserve">
+    <value>Zur Registrierung</value>
+  </data>
+  <data name="registerTitle" xml:space="preserve">
+    <value>Registrierungsformular</value>
+  </data>
+  <data name="labelPersonalNumber" xml:space="preserve">
+    <value>Personenkennzeichen</value>
+  </data>
+  <data name="phPersonalNumber" xml:space="preserve">
+    <value>JJJJMMTT-XXXX oder JJMMTT-XXXX oder 11 Ziffern oder 9-12 alphanumerisch</value>
+  </data>
+  <data name="labelFirstName" xml:space="preserve">
+    <value>Vorname</value>
+  </data>
+  <data name="phFirstName" xml:space="preserve">
+    <value>Vorname eingeben</value>
+  </data>
+  <data name="labelLastName" xml:space="preserve">
+    <value>Nachname</value>
+  </data>
+  <data name="phLastName" xml:space="preserve">
+    <value>Nachname eingeben</value>
+  </data>
+  <data name="labelPhone" xml:space="preserve">
+    <value>Telefonnummer</value>
+  </data>
+  <data name="phPhone" xml:space="preserve">
+    <value>(123) 456-7890</value>
+  </data>
+  <data name="btnSubmit" xml:space="preserve">
+    <value>Senden</value>
+  </data>
+  <data name="btnClear" xml:space="preserve">
+    <value>Leeren</value>
+  </data>
+  <data name="alertSubmitTitle" xml:space="preserve">
+    <value>Formular gesendet</value>
+  </data>
+  <data name="alertValidationTitle" xml:space="preserve">
+    <value>Validierungsfehler</value>
+  </data>
 </root>

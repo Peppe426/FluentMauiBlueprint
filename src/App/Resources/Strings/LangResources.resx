@@ -15,4 +15,49 @@
   <data name="welcome" xml:space="preserve">
     <value>Welcome</value>
   </data>
+  <data name="welcomeMessage" xml:space="preserve">
+    <value>Welcome to the app. Please proceed to the registration form.</value>
+  </data>
+  <data name="goToRegister" xml:space="preserve">
+    <value>Go to Register</value>
+  </data>
+  <data name="registerTitle" xml:space="preserve">
+    <value>Registration Form</value>
+  </data>
+  <data name="labelPersonalNumber" xml:space="preserve">
+    <value>Personal Number</value>
+  </data>
+  <data name="phPersonalNumber" xml:space="preserve">
+    <value>YYYYMMDD-XXXX or YYMMDD-XXXX or 11 digits or 9-12 alphanumeric</value>
+  </data>
+  <data name="labelFirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="phFirstName" xml:space="preserve">
+    <value>Enter first name</value>
+  </data>
+  <data name="labelLastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="phLastName" xml:space="preserve">
+    <value>Enter last name</value>
+  </data>
+  <data name="labelPhone" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="phPhone" xml:space="preserve">
+    <value>(123) 456-7890</value>
+  </data>
+  <data name="btnSubmit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="btnClear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="alertSubmitTitle" xml:space="preserve">
+    <value>Form Submitted</value>
+  </data>
+  <data name="alertValidationTitle" xml:space="preserve">
+    <value>Validation Error</value>
+  </data>
 </root>
