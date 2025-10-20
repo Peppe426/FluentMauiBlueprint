@@ -5,6 +5,11 @@ public partial class AppShell : Shell
     public AppShell()
     {
         InitializeComponent();
-        Routing.RegisterRoute(nameof(Pages.RegisterPage), typeof(Pages.RegisterPage));
+    }
+
+    private async void OnUserHeaderTapped(object? sender, EventArgs e)
+    {
+        // Navigate to the user page (absolute route to select flyout if present)
+        await Shell.Current.GoToAsync("//user");
     }
 }

@@ -9,7 +9,8 @@
 
         private async void OnGoToRegister(object? sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync(nameof(Pages.RegisterPage));
+            // Navigate to the flyout item's route so the left nav highlights the active page
+            await Shell.Current.GoToAsync("//register");
         }
     }
 }
