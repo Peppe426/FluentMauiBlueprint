@@ -6,18 +6,20 @@
              Title="{x:Static strings:LangResources.welcome}">
 
     <ScrollView>
-        <VerticalStackLayout Padding="30" Spacing="20">
-            <Label Text="{x:Static strings:LangResources.welcome}"
-                   FontSize="24"
-                   HorizontalOptions="Center" />
+        <Border Style="{StaticResource PageContainerStyle}">
+            <VerticalStackLayout Spacing="20">
+                <Label Text="{x:Static strings:LangResources.welcome}"
+                       FontSize="24"
+                       HorizontalOptions="Center" />
 
-            <Label Text="{x:Static strings:LangResources.welcomeMessage}"
-                   HorizontalOptions="Center"
-                   HorizontalTextAlignment="Center" />
+                <Label Text="{x:Static strings:LangResources.welcomeMessage}"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center" />
 
-            <Button Text="{x:Static strings:LangResources.goToRegister}"
-                    HorizontalOptions="Center"
-                    Clicked="OnGoToRegister" />
-        </VerticalStackLayout>
+                <Button Text="{x:Static strings:LangResources.goToRegister}"
+                        HorizontalOptions="Center"
+                        Clicked="OnGoToRegister" />
+            </VerticalStackLayout>
+        </Border>
     </ScrollView>
 </ContentPage>

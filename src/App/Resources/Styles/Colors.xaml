@@ -42,4 +42,32 @@
     <SolidColorBrush x:Key="Gray600Brush" Color="{StaticResource Gray600}"/>
     <SolidColorBrush x:Key="Gray900Brush" Color="{StaticResource Gray900}"/>
     <SolidColorBrush x:Key="Gray950Brush" Color="{StaticResource Gray950}"/>
+
+    <!-- Semantic theme colors (light/dark aware) using separate keys -->
+    <Color x:Key="PageBackgroundLight">#F7F7F8</Color>
+    <Color x:Key="PageBackgroundDark">#121212</Color>
+    <Color x:Key="SurfaceLight">#FFFFFF</Color>
+    <Color x:Key="SurfaceDark">#1E1E1E</Color>
+    <Color x:Key="TextPrimaryLight">#111111</Color>
+    <Color x:Key="TextPrimaryDark">#F5F5F5</Color>
+    <Color x:Key="TextSecondaryLight">#5C5C5C</Color>
+    <Color x:Key="TextSecondaryDark">#B0B0B0</Color>
+    <Color x:Key="DividerLight">#E6E6E6</Color>
+    <Color x:Key="DividerDark">#2A2A2A</Color>
+    <Color x:Key="AccentLight">#512BD4</Color>
+    <Color x:Key="AccentDark">#AC99EA</Color>
+
+    <!-- Brushes that will be consumed via AppThemeBinding in styles -->
+    <SolidColorBrush x:Key="PageBackgroundBrushLight" Color="{StaticResource PageBackgroundLight}" />
+    <SolidColorBrush x:Key="PageBackgroundBrushDark" Color="{StaticResource PageBackgroundDark}" />
+    <SolidColorBrush x:Key="SurfaceBrushLight" Color="{StaticResource SurfaceLight}" />
+    <SolidColorBrush x:Key="SurfaceBrushDark" Color="{StaticResource SurfaceDark}" />
+    <SolidColorBrush x:Key="TextPrimaryBrushLight" Color="{StaticResource TextPrimaryLight}" />
+    <SolidColorBrush x:Key="TextPrimaryBrushDark" Color="{StaticResource TextPrimaryDark}" />
+    <SolidColorBrush x:Key="TextSecondaryBrushLight" Color="{StaticResource TextSecondaryLight}" />
+    <SolidColorBrush x:Key="TextSecondaryBrushDark" Color="{StaticResource TextSecondaryDark}" />
+    <SolidColorBrush x:Key="DividerBrushLight" Color="{StaticResource DividerLight}" />
+    <SolidColorBrush x:Key="DividerBrushDark" Color="{StaticResource DividerDark}" />
+    <SolidColorBrush x:Key="AccentBrushLight" Color="{StaticResource AccentLight}" />
+    <SolidColorBrush x:Key="AccentBrushDark" Color="{StaticResource AccentDark}" />
 </ResourceDictionary>
