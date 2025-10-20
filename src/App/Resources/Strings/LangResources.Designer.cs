@@ -203,5 +203,86 @@ namespace App.Resources.Strings {
                 return ResourceManager.GetString("alertValidationTitle", resourceCulture);
             }
         }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Settings.
+        /// </summary>
+        internal static string settingsTitle {
+            get {
+                return ResourceManager.GetString("settingsTitle", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Theme.
+        /// </summary>
+        internal static string settingsTheme {
+            get {
+                return ResourceManager.GetString("settingsTheme", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        internal static string settingsLanguage {
+            get {
+                return ResourceManager.GetString("settingsLanguage", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to System Default.
+        /// </summary>
+        internal static string optionSystemDefault {
+            get {
+                return ResourceManager.GetString("optionSystemDefault", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Light.
+        /// </summary>
+        internal static string optionLight {
+            get {
+                return ResourceManager.GetString("optionLight", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Dark.
+        /// </summary>
+        internal static string optionDark {
+            get {
+                return ResourceManager.GetString("optionDark", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to English.
+        /// </summary>
+        internal static string optionEnglish {
+            get {
+                return ResourceManager.GetString("optionEnglish", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Swedish.
+        /// </summary>
+        internal static string optionSwedish {
+            get {
+                return ResourceManager.GetString("optionSwedish", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to German.
+        /// </summary>
+        internal static string optionGerman {
+            get {
+                return ResourceManager.GetString("optionGerman", resourceCulture);
+            }
+        }
     }
 }

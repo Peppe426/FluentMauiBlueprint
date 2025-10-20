@@ -60,4 +60,31 @@
   <data name="alertValidationTitle" xml:space="preserve">
     <value>Valideringsfel</value>
   </data>
+  <data name="settingsTitle" xml:space="preserve">
+    <value>Inställningar</value>
+  </data>
+  <data name="settingsTheme" xml:space="preserve">
+    <value>Tema</value>
+  </data>
+  <data name="settingsLanguage" xml:space="preserve">
+    <value>Språk</value>
+  </data>
+  <data name="optionSystemDefault" xml:space="preserve">
+    <value>Systemstandard</value>
+  </data>
+  <data name="optionLight" xml:space="preserve">
+    <value>Ljust</value>
+  </data>
+  <data name="optionDark" xml:space="preserve">
+    <value>Mörkt</value>
+  </data>
+  <data name="optionEnglish" xml:space="preserve">
+    <value>Engelska</value>
+  </data>
+  <data name="optionSwedish" xml:space="preserve">
+    <value>Svenska</value>
+  </data>
+  <data name="optionGerman" xml:space="preserve">
+    <value>Tyska</value>
+  </data>
 </root>
