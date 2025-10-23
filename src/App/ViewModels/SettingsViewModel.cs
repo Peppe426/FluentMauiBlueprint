@@ -50,6 +50,12 @@ public class SettingsViewModel : INotifyPropertyChanged
     public string ThemeTitle => LangResources.settingsTheme ?? "Theme";
     public string LanguageTitle => LangResources.settingsLanguage ?? "Language";
 
+    // Shell/Flyout localized items
+    public string MenuHomeTitle => LangResources.navHome ?? "Home";
+    public string MenuRegisterTitle => LangResources.navRegister ?? "Register";
+    public string MenuUserTitle => LangResources.navUser ?? (LangResources.user ?? "User");
+    public string ViewProfileTitle => LangResources.navViewProfile ?? "View profile";
+
     public SettingsViewModel()
     {
         // Initialize options with keys and localized display
@@ -122,6 +128,10 @@ public class SettingsViewModel : INotifyPropertyChanged
         OnPropertyChanged(nameof(SettingsTitle));
         OnPropertyChanged(nameof(ThemeTitle));
         OnPropertyChanged(nameof(LanguageTitle));
+        OnPropertyChanged(nameof(MenuHomeTitle));
+        OnPropertyChanged(nameof(MenuRegisterTitle));
+        OnPropertyChanged(nameof(MenuUserTitle));
+        OnPropertyChanged(nameof(ViewProfileTitle));
 
         // Refresh option item displays
         foreach (var o in ThemeOptions) o.NotifyDisplayChanged();
