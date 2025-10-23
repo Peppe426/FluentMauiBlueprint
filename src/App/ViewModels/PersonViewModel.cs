@@ -6,13 +6,9 @@ namespace App.ViewModels;
 
 public partial class PersonViewModel : ObservableObject
 {
-    private static readonly Regex PersonalNumberRegex = new(
-        @"^(\d{8}|\d{6})[-\s]\d{4}$|^\d{11}$|^[A-Za-z0-9]{9,12}$",
-        RegexOptions.Compiled);
+    private static readonly Regex PersonalNumberRegex = new(@"^(\d{8}|\d{6})[-\s]\d{4}$|^\d{11}$|^[A-Za-z0-9]{9,12}$", RegexOptions.Compiled);
 
-    private static readonly Regex UsPhoneRegex = new(
-        @"^\(\d{3}\) \d{3}-\d{4}$",
-        RegexOptions.Compiled);
+    private static readonly Regex UsPhoneRegex = new(@"^\(\d{3}\) \d{3}-\d{4}$", RegexOptions.Compiled);
 
     [ObservableProperty]
     private string? personalNumber;
@@ -26,14 +22,11 @@ public partial class PersonViewModel : ObservableObject
     [ObservableProperty]
     private string? phoneNumber;
 
-    private bool IsValidPersonalNumber(string? value)
-        => !string.IsNullOrWhiteSpace(value) && PersonalNumberRegex.IsMatch(value.Trim());
+    private bool IsValidPersonalNumber(string? value) => !string.IsNullOrWhiteSpace(value) && PersonalNumberRegex.IsMatch(value.Trim());
 
-    private static bool IsValidName(string? value)
-        => !string.IsNullOrWhiteSpace(value) && value.Trim().Length >= 2;
+    private static bool IsValidName(string? value) => !string.IsNullOrWhiteSpace(value) && value.Trim().Length >= 2;
 
-    private bool IsValidPhone(string? value)
-        => !string.IsNullOrWhiteSpace(value) && UsPhoneRegex.IsMatch(value.Trim());
+    private bool IsValidPhone(string? value) => !string.IsNullOrWhiteSpace(value) && UsPhoneRegex.IsMatch(value.Trim());
 
     [RelayCommand]
     private async Task SubmitAsync()
