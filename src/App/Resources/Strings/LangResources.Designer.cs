@@ -61,132 +61,6 @@ namespace App.Resources.Strings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Welcome.
-        /// </summary>
-        internal static string welcome {
-            get {
-                return ResourceManager.GetString("welcome", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to Welcome to the app. Please proceed to the registration form..
-        /// </summary>
-        internal static string welcomeMessage {
-            get {
-                return ResourceManager.GetString("welcomeMessage", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to Go to Register.
-        /// </summary>
-        internal static string goToRegister {
-            get {
-                return ResourceManager.GetString("goToRegister", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to Registration Form.
-        /// </summary>
-        internal static string registerTitle {
-            get {
-                return ResourceManager.GetString("registerTitle", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to Personal Number.
-        /// </summary>
-        internal static string labelPersonalNumber {
-            get {
-                return ResourceManager.GetString("labelPersonalNumber", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to YYYYMMDD-XXXX or YYMMDD-XXXX or 11 digits or 9-12 alphanumeric.
-        /// </summary>
-        internal static string phPersonalNumber {
-            get {
-                return ResourceManager.GetString("phPersonalNumber", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to First Name.
-        /// </summary>
-        internal static string labelFirstName {
-            get {
-                return ResourceManager.GetString("labelFirstName", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to Enter first name.
-        /// </summary>
-        internal static string phFirstName {
-            get {
-                return ResourceManager.GetString("phFirstName", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to Last Name.
-        /// </summary>
-        internal static string labelLastName {
-            get {
-                return ResourceManager.GetString("labelLastName", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to Enter last name.
-        /// </summary>
-        internal static string phLastName {
-            get {
-                return ResourceManager.GetString("phLastName", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to Phone Number.
-        /// </summary>
-        internal static string labelPhone {
-            get {
-                return ResourceManager.GetString("labelPhone", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to (123) 456-7890.
-        /// </summary>
-        internal static string phPhone {
-            get {
-                return ResourceManager.GetString("phPhone", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to Submit.
-        /// </summary>
-        internal static string btnSubmit {
-            get {
-                return ResourceManager.GetString("btnSubmit", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to Clear.
-        /// </summary>
-        internal static string btnClear {
-            get {
-                return ResourceManager.GetString("btnClear", resourceCulture);
-            }
-        }
-
-        /// <summary>
         ///   Looks up a localized string similar to Form Submitted.
         /// </summary>
         internal static string alertSubmitTitle {
@@ -194,7 +68,7 @@ namespace App.Resources.Strings {
                 return ResourceManager.GetString("alertSubmitTitle", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Validation Error.
         /// </summary>
@@ -203,52 +77,70 @@ namespace App.Resources.Strings {
                 return ResourceManager.GetString("alertValidationTitle", resourceCulture);
             }
         }
-
+        
         /// <summary>
-        ///   Looks up a localized string similar to Settings.
+        ///   Looks up a localized string similar to Clear.
         /// </summary>
-        internal static string settingsTitle {
+        internal static string btnClear {
             get {
-                return ResourceManager.GetString("settingsTitle", resourceCulture);
+                return ResourceManager.GetString("btnClear", resourceCulture);
             }
         }
-
+        
         /// <summary>
-        ///   Looks up a localized string similar to Theme.
+        ///   Looks up a localized string similar to Submit.
         /// </summary>
-        internal static string settingsTheme {
+        internal static string btnSubmit {
             get {
-                return ResourceManager.GetString("settingsTheme", resourceCulture);
+                return ResourceManager.GetString("btnSubmit", resourceCulture);
             }
         }
-
+        
         /// <summary>
-        ///   Looks up a localized string similar to Language.
+        ///   Looks up a localized string similar to Go to Register.
         /// </summary>
-        internal static string settingsLanguage {
+        internal static string goToRegister {
             get {
-                return ResourceManager.GetString("settingsLanguage", resourceCulture);
+                return ResourceManager.GetString("goToRegister", resourceCulture);
             }
         }
-
+        
         /// <summary>
-        ///   Looks up a localized string similar to System Default.
+        ///   Looks up a localized string similar to First Name.
         /// </summary>
-        internal static string optionSystemDefault {
+        internal static string labelFirstName {
             get {
-                return ResourceManager.GetString("optionSystemDefault", resourceCulture);
+                return ResourceManager.GetString("labelFirstName", resourceCulture);
             }
         }
-
+        
         /// <summary>
-        ///   Looks up a localized string similar to Light.
+        ///   Looks up a localized string similar to Last Name.
         /// </summary>
-        internal static string optionLight {
+        internal static string labelLastName {
             get {
-                return ResourceManager.GetString("optionLight", resourceCulture);
+                return ResourceManager.GetString("labelLastName", resourceCulture);
             }
         }
-
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Personal Number.
+        /// </summary>
+        internal static string labelPersonalNumber {
+            get {
+                return ResourceManager.GetString("labelPersonalNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone Number.
+        /// </summary>
+        internal static string labelPhone {
+            get {
+                return ResourceManager.GetString("labelPhone", resourceCulture);
+            }
+        }
+        
         /// <summary>
         ///   Looks up a localized string similar to Dark.
         /// </summary>
@@ -257,7 +149,7 @@ namespace App.Resources.Strings {
                 return ResourceManager.GetString("optionDark", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to English.
         /// </summary>
@@ -266,7 +158,25 @@ namespace App.Resources.Strings {
                 return ResourceManager.GetString("optionEnglish", resourceCulture);
             }
         }
-
+        
+        /// <summary>
+        ///   Looks up a localized string similar to German.
+        /// </summary>
+        internal static string optionGerman {
+            get {
+                return ResourceManager.GetString("optionGerman", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Light.
+        /// </summary>
+        internal static string optionLight {
+            get {
+                return ResourceManager.GetString("optionLight", resourceCulture);
+            }
+        }
+        
         /// <summary>
         ///   Looks up a localized string similar to Swedish.
         /// </summary>
@@ -275,13 +185,121 @@ namespace App.Resources.Strings {
                 return ResourceManager.GetString("optionSwedish", resourceCulture);
             }
         }
-
+        
         /// <summary>
-        ///   Looks up a localized string similar to German.
+        ///   Looks up a localized string similar to System Default.
         /// </summary>
-        internal static string optionGerman {
+        internal static string optionSystemDefault {
             get {
-                return ResourceManager.GetString("optionGerman", resourceCulture);
+                return ResourceManager.GetString("optionSystemDefault", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter first name.
+        /// </summary>
+        internal static string phFirstName {
+            get {
+                return ResourceManager.GetString("phFirstName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter last name.
+        /// </summary>
+        internal static string phLastName {
+            get {
+                return ResourceManager.GetString("phLastName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to YYYYMMDD-XXXX or YYMMDD-XXXX or11 digits or9-12 alphanumeric.
+        /// </summary>
+        internal static string phPersonalNumber {
+            get {
+                return ResourceManager.GetString("phPersonalNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (123)456-7890.
+        /// </summary>
+        internal static string phPhone {
+            get {
+                return ResourceManager.GetString("phPhone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Registration Form.
+        /// </summary>
+        internal static string registerTitle {
+            get {
+                return ResourceManager.GetString("registerTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        internal static string settingsLanguage {
+            get {
+                return ResourceManager.GetString("settingsLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Theme.
+        /// </summary>
+        internal static string settingsTheme {
+            get {
+                return ResourceManager.GetString("settingsTheme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings.
+        /// </summary>
+        internal static string settingsTitle {
+            get {
+                return ResourceManager.GetString("settingsTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User.
+        /// </summary>
+        internal static string user {
+            get {
+                return ResourceManager.GetString("user", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Register patient.
+        /// </summary>
+        internal static string userTitle {
+            get {
+                return ResourceManager.GetString("userTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Welcome.
+        /// </summary>
+        internal static string welcome {
+            get {
+                return ResourceManager.GetString("welcome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Welcome to the app. Please proceed to the registration form..
+        /// </summary>
+        internal static string welcomeMessage {
+            get {
+                return ResourceManager.GetString("welcomeMessage", resourceCulture);
             }
         }
     }

@@ -1,5 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
+  <!-- Microsoft ResX Schema -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -14,77 +61,110 @@
   </resheader>
   <data name="welcome" xml:space="preserve">
     <value>Welcome</value>
+    <comment>Short heading shown on the home page.</comment>
   </data>
   <data name="welcomeMessage" xml:space="preserve">
     <value>Welcome to the app. Please proceed to the registration form.</value>
+    <comment>Introductory message on the home page.</comment>
   </data>
   <data name="goToRegister" xml:space="preserve">
     <value>Go to Register</value>
+    <comment>Button text: navigates to the registration page.</comment>
   </data>
   <data name="registerTitle" xml:space="preserve">
     <value>Registration Form</value>
+    <comment>Title of the registration form page.</comment>
   </data>
   <data name="labelPersonalNumber" xml:space="preserve">
     <value>Personal Number</value>
+    <comment>Label for the personal number input field.</comment>
   </data>
   <data name="phPersonalNumber" xml:space="preserve">
-    <value>YYYYMMDD-XXXX or YYMMDD-XXXX or 11 digits or 9-12 alphanumeric</value>
+    <value>YYYYMMDD-XXXX or YYMMDD-XXXX or11 digits or9-12 alphanumeric</value>
+    <comment>Placeholder text for personal number entry format examples.</comment>
   </data>
   <data name="labelFirstName" xml:space="preserve">
     <value>First Name</value>
+    <comment>Label for the first name input field.</comment>
   </data>
   <data name="phFirstName" xml:space="preserve">
     <value>Enter first name</value>
+    <comment>Placeholder text for first name input.</comment>
   </data>
   <data name="labelLastName" xml:space="preserve">
     <value>Last Name</value>
+    <comment>Label for the last name input field.</comment>
   </data>
   <data name="phLastName" xml:space="preserve">
     <value>Enter last name</value>
+    <comment>Placeholder text for last name input.</comment>
   </data>
   <data name="labelPhone" xml:space="preserve">
     <value>Phone Number</value>
+    <comment>Label for the phone number input field.</comment>
   </data>
   <data name="phPhone" xml:space="preserve">
-    <value>(123) 456-7890</value>
+    <value>(123)456-7890</value>
+    <comment>Example phone number placeholder (US format).</comment>
   </data>
   <data name="btnSubmit" xml:space="preserve">
     <value>Submit</value>
+    <comment>Submit button text.</comment>
   </data>
   <data name="btnClear" xml:space="preserve">
     <value>Clear</value>
+    <comment>Clear/reset button text.</comment>
   </data>
   <data name="alertSubmitTitle" xml:space="preserve">
     <value>Form Submitted</value>
+    <comment>Alert title shown when the form is successfully submitted.</comment>
   </data>
   <data name="alertValidationTitle" xml:space="preserve">
     <value>Validation Error</value>
+    <comment>Alert title shown when validation fails.</comment>
   </data>
   <data name="settingsTitle" xml:space="preserve">
     <value>Settings</value>
+    <comment>Title of the settings page.</comment>
   </data>
   <data name="settingsTheme" xml:space="preserve">
     <value>Theme</value>
+    <comment>Label for the theme selection setting.</comment>
   </data>
   <data name="settingsLanguage" xml:space="preserve">
     <value>Language</value>
+    <comment>Label for the language selection setting.</comment>
   </data>
   <data name="optionSystemDefault" xml:space="preserve">
     <value>System Default</value>
+    <comment>Option text to use the system's default setting.</comment>
   </data>
   <data name="optionLight" xml:space="preserve">
     <value>Light</value>
+    <comment>Option text for light theme.</comment>
   </data>
   <data name="optionDark" xml:space="preserve">
     <value>Dark</value>
+    <comment>Option text for dark theme.</comment>
   </data>
   <data name="optionEnglish" xml:space="preserve">
     <value>English</value>
+    <comment>Option text for English language.</comment>
   </data>
   <data name="optionSwedish" xml:space="preserve">
     <value>Swedish</value>
+    <comment>Option text for Swedish language.</comment>
   </data>
   <data name="optionGerman" xml:space="preserve">
     <value>German</value>
+    <comment>Option text for German language.</comment>
+  </data>
+  <data name="userTitle" xml:space="preserve">
+    <value>Register patient</value>
+    <comment>Title of the user registration page</comment>
+  </data>
+  <data name="user" xml:space="preserve">
+    <value>User</value>
+    <comment>Title of the user page.</comment>
   </data>
 </root>

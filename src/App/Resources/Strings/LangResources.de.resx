@@ -1,90 +1,163 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <resheader name="resmimetype">
-    <value>text/microsoft-resx</value>
-  </resheader>
-  <resheader name="version">
-    <value>2.0</value>
-  </resheader>
-  <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <data name="welcome" xml:space="preserve">
-    <value>Willkommen</value>
-  </data>
-  <data name="welcomeMessage" xml:space="preserve">
-    <value>Willkommen in der App. Bitte fahren Sie mit dem Registrierungsformular fort.</value>
-  </data>
-  <data name="goToRegister" xml:space="preserve">
-    <value>Zur Registrierung</value>
-  </data>
-  <data name="registerTitle" xml:space="preserve">
-    <value>Registrierungsformular</value>
-  </data>
-  <data name="labelPersonalNumber" xml:space="preserve">
-    <value>Personenkennzeichen</value>
-  </data>
-  <data name="phPersonalNumber" xml:space="preserve">
-    <value>JJJJMMTT-XXXX oder JJMMTT-XXXX oder 11 Ziffern oder 9-12 alphanumerisch</value>
-  </data>
-  <data name="labelFirstName" xml:space="preserve">
-    <value>Vorname</value>
-  </data>
-  <data name="phFirstName" xml:space="preserve">
-    <value>Vorname eingeben</value>
-  </data>
-  <data name="labelLastName" xml:space="preserve">
-    <value>Nachname</value>
-  </data>
-  <data name="phLastName" xml:space="preserve">
-    <value>Nachname eingeben</value>
-  </data>
-  <data name="labelPhone" xml:space="preserve">
-    <value>Telefonnummer</value>
-  </data>
-  <data name="phPhone" xml:space="preserve">
-    <value>(123) 456-7890</value>
-  </data>
-  <data name="btnSubmit" xml:space="preserve">
-    <value>Senden</value>
-  </data>
-  <data name="btnClear" xml:space="preserve">
-    <value>Leeren</value>
-  </data>
-  <data name="alertSubmitTitle" xml:space="preserve">
-    <value>Formular gesendet</value>
-  </data>
-  <data name="alertValidationTitle" xml:space="preserve">
-    <value>Validierungsfehler</value>
-  </data>
-  <data name="settingsTitle" xml:space="preserve">
-    <value>Einstellungen</value>
-  </data>
-  <data name="settingsTheme" xml:space="preserve">
-    <value>Design</value>
-  </data>
-  <data name="settingsLanguage" xml:space="preserve">
-    <value>Sprache</value>
-  </data>
-  <data name="optionSystemDefault" xml:space="preserve">
-    <value>Systemstandard</value>
-  </data>
-  <data name="optionLight" xml:space="preserve">
-    <value>Hell</value>
-  </data>
-  <data name="optionDark" xml:space="preserve">
-    <value>Dunkel</value>
-  </data>
-  <data name="optionEnglish" xml:space="preserve">
-    <value>Englisch</value>
-  </data>
-  <data name="optionSwedish" xml:space="preserve">
-    <value>Schwedisch</value>
-  </data>
-  <data name="optionGerman" xml:space="preserve">
-    <value>Deutsch</value>
-  </data>
+ <!-- Microsoft ResX Schema -->
+ <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+ <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+ <xsd:element name="root" msdata:IsDataSet="true">
+ <xsd:complexType>
+ <xsd:choice maxOccurs="unbounded">
+ <xsd:element name="metadata">
+ <xsd:complexType>
+ <xsd:sequence>
+ <xsd:element name="value" type="xsd:string" minOccurs="0" />
+ </xsd:sequence>
+ <xsd:attribute name="name" use="required" type="xsd:string" />
+ <xsd:attribute name="type" type="xsd:string" />
+ <xsd:attribute name="mimetype" type="xsd:string" />
+ <xsd:attribute ref="xml:space" />
+ </xsd:complexType>
+ </xsd:element>
+ <xsd:element name="assembly">
+ <xsd:complexType>
+ <xsd:attribute name="alias" type="xsd:string" />
+ <xsd:attribute name="name" type="xsd:string" />
+</xsd:complexType>
+ </xsd:element>
+ <xsd:element name="data">
+ <xsd:complexType>
+ <xsd:sequence>
+ <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+ <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+ </xsd:sequence>
+ <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+ <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+ <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+ <xsd:attribute ref="xml:space" />
+ </xsd:complexType>
+ </xsd:element>
+ <xsd:element name="resheader">
+ <xsd:complexType>
+ <xsd:sequence>
+ <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+ </xsd:sequence>
+ <xsd:attribute name="name" type="xsd:string" use="required" />
+ </xsd:complexType>
+ </xsd:element>
+ </xsd:choice>
+ </xsd:complexType>
+ </xsd:element>
+ </xsd:schema>
+ <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+ <resheader name="version"><value>2.0</value></resheader>
+ <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+ <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+ <data name="welcome" xml:space="preserve">
+ <value>Willkommen</value>
+ <comment>Kurze Überschrift auf der Startseite.</comment>
+ </data>
+ <data name="welcomeMessage" xml:space="preserve">
+ <value>Willkommen in der App. Bitte fahren Sie mit dem Registrierungsformular fort.</value>
+ <comment>Einführungstext auf der Startseite.</comment>
+ </data>
+ <data name="goToRegister" xml:space="preserve">
+ <value>Zur Registrierung</value>
+ <comment>Schaltflächentext: navigiert zur Registrierungsseite.</comment>
+ </data>
+ <data name="registerTitle" xml:space="preserve">
+ <value>Registrierungsformular</value>
+ <comment>Titel der Registrierungsseite.</comment>
+ </data>
+ <data name="labelPersonalNumber" xml:space="preserve">
+ <value>Personenkennzeichen</value>
+ <comment>Beschriftung für das Personenkennzeichen-Feld.</comment>
+ </data>
+ <data name="phPersonalNumber" xml:space="preserve">
+ <value>JJJJMMTT-XXXX oder JJMMTT-XXXX oder 11 Ziffern oder 9–12 alphanumerisch</value>
+ <comment>Platzhalterbeispiele für das Personenkennzeichenformat.</comment>
+ </data>
+ <data name="labelFirstName" xml:space="preserve">
+ <value>Vorname</value>
+ <comment>Beschriftung für das Vornamensfeld.</comment>
+ </data>
+ <data name="phFirstName" xml:space="preserve">
+ <value>Vorname eingeben</value>
+ <comment>Platzhaltertext für Vorname.</comment>
+ </data>
+ <data name="labelLastName" xml:space="preserve">
+ <value>Nachname</value>
+ <comment>Beschriftung für das Nachnamensfeld.</comment>
+ </data>
+ <data name="phLastName" xml:space="preserve">
+ <value>Nachname eingeben</value>
+ <comment>Platzhaltertext für Nachname.</comment>
+ </data>
+ <data name="labelPhone" xml:space="preserve">
+ <value>Telefonnummer</value>
+ <comment>Beschriftung für das Telefonnummernfeld.</comment>
+ </data>
+ <data name="phPhone" xml:space="preserve">
+ <value>(123) 456-7890</value>
+ <comment>Beispieltelefonnummer (US-Format).</comment>
+ </data>
+ <data name="btnSubmit" xml:space="preserve">
+ <value>Senden</value>
+ <comment>Schaltflächentext zum Senden des Formulars.</comment>
+ </data>
+ <data name="btnClear" xml:space="preserve">
+ <value>Leeren</value>
+ <comment>Schaltflächentext zum Leeren des Formulars.</comment>
+ </data>
+ <data name="alertSubmitTitle" xml:space="preserve">
+ <value>Formular gesendet</value>
+ <comment>Alarmtitel bei erfolgreichem Senden.</comment>
+ </data>
+ <data name="alertValidationTitle" xml:space="preserve">
+ <value>Validierungsfehler</value>
+ <comment>Alarmtitel bei Validierungsfehlern.</comment>
+ </data>
+ <data name="settingsTitle" xml:space="preserve">
+ <value>Einstellungen</value>
+ <comment>Titel der Einstellungsseite.</comment>
+ </data>
+ <data name="settingsTheme" xml:space="preserve">
+ <value>Design</value>
+ <comment>Beschriftung für die Designauswahl.</comment>
+ </data>
+ <data name="settingsLanguage" xml:space="preserve">
+ <value>Sprache</value>
+ <comment>Beschriftung für die Sprachauswahl.</comment>
+ </data>
+ <data name="optionSystemDefault" xml:space="preserve">
+ <value>Systemstandard</value>
+ <comment>Option für die Verwendung des Systemstandards.</comment>
+ </data>
+ <data name="optionLight" xml:space="preserve">
+ <value>Hell</value>
+ <comment>Option für das helle Design.</comment>
+ </data>
+ <data name="optionDark" xml:space="preserve">
+ <value>Dunkel</value>
+ <comment>Option für das dunkle Design.</comment>
+ </data>
+ <data name="optionEnglish" xml:space="preserve">
+ <value>Englisch</value>
+ <comment>Option für Englisch.</comment>
+ </data>
+ <data name="optionSwedish" xml:space="preserve">
+ <value>Schwedisch</value>
+ <comment>Option für Schwedisch.</comment>
+ </data>
+ <data name="optionGerman" xml:space="preserve">
+ <value>Deutsch</value>
+ <comment>Option für Deutsch.</comment>
+ </data>
+ <data name="user" xml:space="preserve">
+ <value>Benutzer</value>
+ <comment>Titel der Benutzerseite.</comment>
+ </data>
+ <data name="userTitle" xml:space="preserve">
+ <value>Patient registrieren</value>
+ <comment>Titel der Benutzerregistrierungsseite.</comment>
+ </data>
 </root>
