@@ -302,5 +302,41 @@ namespace App.Resources.Strings {
                 return ResourceManager.GetString("welcomeMessage", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Home.
+        /// </summary>
+        internal static string navHome {
+            get {
+                return ResourceManager.GetString("navHome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Register.
+        /// </summary>
+        internal static string navRegister {
+            get {
+                return ResourceManager.GetString("navRegister", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User.
+        /// </summary>
+        internal static string navUser {
+            get {
+                return ResourceManager.GetString("navUser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View profile.
+        /// </summary>
+        internal static string navViewProfile {
+            get {
+                return ResourceManager.GetString("navViewProfile", resourceCulture);
+            }
+        }
     }
 }

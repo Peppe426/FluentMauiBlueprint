@@ -160,4 +160,20 @@
  <value>Patient registrieren</value>
  <comment>Titel der Benutzerregistrierungsseite.</comment>
  </data>
+ <data name="navHome" xml:space="preserve">
+ <value>Start</value>
+ <comment>Flyout-Menü: Startseite</comment>
+ </data>
+ <data name="navRegister" xml:space="preserve">
+ <value>Registrieren</value>
+ <comment>Flyout-Menü: Registrierung</comment>
+ </data>
+ <data name="navUser" xml:space="preserve">
+ <value>Benutzer</value>
+ <comment>Flyout-Menü: Benutzer</comment>
+ </data>
+ <data name="navViewProfile" xml:space="preserve">
+ <value>Profil anzeigen</value>
+ <comment>Flyout-Kopfzeile Untertitel</comment>
+ </data>
 </root>

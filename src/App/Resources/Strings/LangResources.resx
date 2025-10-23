@@ -167,4 +167,20 @@
     <value>User</value>
     <comment>Title of the user page.</comment>
   </data>
+  <data name="navHome" xml:space="preserve">
+    <value>Home</value>
+    <comment>Flyout menu: Home</comment>
+  </data>
+  <data name="navRegister" xml:space="preserve">
+    <value>Register</value>
+    <comment>Flyout menu: Register</comment>
+  </data>
+  <data name="navUser" xml:space="preserve">
+    <value>User</value>
+    <comment>Flyout menu: User</comment>
+  </data>
+  <data name="navViewProfile" xml:space="preserve">
+    <value>View profile</value>
+    <comment>Flyout header subtitle</comment>
+  </data>
 </root>
