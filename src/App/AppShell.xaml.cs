@@ -5,8 +5,8 @@ public partial class AppShell : Shell
     public AppShell()
     {
         InitializeComponent();
-        // Ensure BindingContext for localized footer label
-        BindingContext = new ViewModels.SettingsViewModel();
+        // Ensure BindingContext for localized footer label using shared VM instance
+        BindingContext = ServiceHelper.GetService<ViewModels.SettingsViewModel>();
         // Register routes
         Routing.RegisterRoute("settings", typeof(Pages.SettingsPage));
     }

@@ -42,15 +42,19 @@ public static class MauiProgram
 #endif
         });
 
-    // Register pages/viewmodels for navigation & DI
+        // Register pages/viewmodels for navigation & DI
         builder.Services.AddSingleton<Pages.SettingsPage>();
         builder.Services.AddSingleton<ViewModels.SettingsViewModel>();
-        
 
 #if DEBUG
         builder.Logging.AddDebug();
 #endif
 
-        return builder.Build();
+        var app = builder.Build();
+
+        // Expose DI container for code-behind/XAML helpers
+        ServiceHelper.Initialize(app.Services);
+
+        return app;
     }
 }

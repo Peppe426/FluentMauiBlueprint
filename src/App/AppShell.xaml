@@ -25,30 +25,30 @@
                                     BorderColor="{AppThemeBinding Light={StaticResource DividerLight}, Dark={StaticResource DividerDark}}" />
                 <VerticalStackLayout Spacing="0" VerticalOptions="Center">
                     <Label Text="John Doe" FontSize="16" />
-                    <Label Text="View profile" FontSize="12" Opacity="0.7" />
+                    <Label Text="{Binding ViewProfileTitle}" FontSize="12" Opacity="0.7" />
                 </VerticalStackLayout>
             </HorizontalStackLayout>
         </Grid>
     </Shell.FlyoutHeader>
 
     <!-- Left-side navigation (Flyout) -->
-    <FlyoutItem Title="Home" Icon="dotnet_bot.png">
+    <FlyoutItem Title="{Binding MenuHomeTitle}" Icon="dotnet_bot.png">
         <ShellContent
-            Title="Home"
+            Title="{Binding MenuHomeTitle}"
             Route="home"
             ContentTemplate="{DataTemplate local:MainPage}" />
     </FlyoutItem>
 
-    <FlyoutItem Title="Register" Icon="dotnet_bot.png">
+    <FlyoutItem Title="{Binding MenuRegisterTitle}" Icon="dotnet_bot.png">
         <ShellContent
-            Title="Register"
+            Title="{Binding MenuRegisterTitle}"
             Route="register"
             ContentTemplate="{DataTemplate pages:RegisterPage}" />
     </FlyoutItem>
 
-    <FlyoutItem Title="User" Icon="dotnet_bot.png">
+    <FlyoutItem Title="{Binding MenuUserTitle}" Icon="dotnet_bot.png">
         <ShellContent
-            Title="User"
+            Title="{Binding MenuUserTitle}"
             Route="user"
             ContentTemplate="{DataTemplate pages:UserPage}" />
     </FlyoutItem>
