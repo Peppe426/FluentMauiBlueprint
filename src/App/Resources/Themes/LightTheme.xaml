@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="App.Resources.Themes.LightTheme">
+
+    <!-- Core surfaces -->
+    <Color x:Key="PageBackgroundColor">#F7F7F8</Color>
+    <Color x:Key="SurfaceColor">#FFFFFF</Color>
+    <Color x:Key="DividerColor">#E6E6E6</Color>
+
+    <SolidColorBrush x:Key="SurfaceBrush" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="DividerBrush" Color="#E6E6E6" />
+
+    <!-- Typography -->
+    <Color x:Key="LabelTextColor">#000000</Color>
+    <Color x:Key="LabelDisabledTextColor">#ACACAC</Color>
+    <Color x:Key="HeadlineTextColor">#190649</Color>
+    <Color x:Key="SubHeadlineTextColor">#190649</Color>
+    <Color x:Key="SecondaryTextColor">#5C5C5C</Color>
+    <Color x:Key="TertiaryTextColor">#6E6E6E</Color>
+
+    <!-- Buttons -->
+    <Color x:Key="ButtonTextColor">#FFFFFF</Color>
+    <Color x:Key="ButtonBackgroundColor">#512BD4</Color>
+    <Color x:Key="ButtonDisabledTextColor">#141414</Color>
+    <Color x:Key="ButtonDisabledBackgroundColor">#C8C8C8</Color>
+
+    <!-- Inputs -->
+    <Color x:Key="EntryTextColor">#000000</Color>
+    <Color x:Key="EntryPlaceholderColor">#C8C8C8</Color>
+    <Color x:Key="EntryDisabledTextColor">#ACACAC</Color>
+
+    <Color x:Key="EditorTextColor">#000000</Color>
+    <Color x:Key="EditorPlaceholderColor">#C8C8C8</Color>
+    <Color x:Key="EditorDisabledTextColor">#ACACAC</Color>
+
+    <Color x:Key="PickerTextColor">#212121</Color>
+    <Color x:Key="PickerTitleColor">#212121</Color>
+    <Color x:Key="PickerDisabledTextColor">#ACACAC</Color>
+    <Color x:Key="PickerDisabledTitleColor">#ACACAC</Color>
+
+    <Color x:Key="DatePickerTextColor">#212121</Color>
+    <Color x:Key="DatePickerDisabledTextColor">#C8C8C8</Color>
+
+    <Color x:Key="TimePickerTextColor">#212121</Color>
+    <Color x:Key="TimePickerDisabledTextColor">#ACACAC</Color>
+
+    <Color x:Key="SearchBarTextColor">#212121</Color>
+    <Color x:Key="SearchBarPlaceholderColor">#6E6E6E</Color>
+    <Color x:Key="SearchBarCancelButtonColor">#6E6E6E</Color>
+    <Color x:Key="SearchBarDisabledTextColor">#ACACAC</Color>
+    <Color x:Key="SearchBarDisabledPlaceholderColor">#ACACAC</Color>
+
+    <Color x:Key="SearchHandlerTextColor">#212121</Color>
+    <Color x:Key="SearchHandlerPlaceholderColor">#6E6E6E</Color>
+    <Color x:Key="SearchHandlerDisabledTextColor">#ACACAC</Color>
+    <Color x:Key="SearchHandlerDisabledPlaceholderColor">#ACACAC</Color>
+
+    <!-- Indicators -->
+    <Color x:Key="ActivityIndicatorColor">#512BD4</Color>
+    <Color x:Key="IndicatorViewIndicatorColor">#C8C8C8</Color>
+    <Color x:Key="IndicatorViewSelectedIndicatorColor">#141414</Color>
+    <Color x:Key="ProgressBarColor">#512BD4</Color>
+    <Color x:Key="ProgressBarDisabledColor">#ACACAC</Color>
+
+    <!-- Borders & Containers -->
+    <SolidColorBrush x:Key="BorderStrokeBrush" Color="#C8C8C8" />
+    <Color x:Key="BoxViewBackgroundColor">#141414</Color>
+    <SolidColorBrush x:Key="PageContainerStrokeBrush" Color="#E6E6E6" />
+    <SolidColorBrush x:Key="PageContainerBackgroundBrush" Color="#FFFFFF" />
+
+    <!-- Lists & Refresh -->
+    <Color x:Key="ListViewSeparatorColor">#C8C8C8</Color>
+    <Color x:Key="ListViewRefreshColor">#212121</Color>
+    <Color x:Key="RefreshViewRefreshColor">#212121</Color>
+
+    <!-- Selection controls -->
+    <Color x:Key="CheckBoxColor">#512BD4</Color>
+    <Color x:Key="CheckBoxDisabledColor">#ACACAC</Color>
+
+    <Color x:Key="RadioButtonTextColor">#000000</Color>
+    <Color x:Key="RadioButtonDisabledTextColor">#ACACAC</Color>
+
+    <Color x:Key="SwitchOnColor">#512BD4</Color>
+    <Color x:Key="SwitchThumbColor">#FFFFFF</Color>
+    <Color x:Key="SwitchDisabledOnColor">#ACACAC</Color>
+    <Color x:Key="SwitchDisabledThumbColor">#ACACAC</Color>
+    <Color x:Key="SwitchOnStateColor">#DFD8F7</Color>
+    <Color x:Key="SwitchOnThumbColor">#512BD4</Color>
+    <Color x:Key="SwitchOffThumbColor">#919191</Color>
+
+    <!-- Sliders -->
+    <Color x:Key="SliderMinimumTrackColor">#512BD4</Color>
+    <Color x:Key="SliderMaximumTrackColor">#C8C8C8</Color>
+    <Color x:Key="SliderThumbColor">#512BD4</Color>
+    <Color x:Key="SliderDisabledMinimumTrackColor">#ACACAC</Color>
+    <Color x:Key="SliderDisabledMaximumTrackColor">#ACACAC</Color>
+    <Color x:Key="SliderDisabledThumbColor">#ACACAC</Color>
+
+    <!-- Misc -->
+    <Color x:Key="SwipeItemBackgroundColor">#FFFFFF</Color>
+    <SolidColorBrush x:Key="ShadowBrush" Color="#FFFFFF" />
+
+    <!-- Shell & Navigation -->
+    <Color x:Key="ShellBackgroundColor">#F7F7F8</Color>
+    <Color x:Key="ShellForegroundColor">#111111</Color>
+    <Color x:Key="ShellTitleColor">#111111</Color>
+    <Color x:Key="ShellDisabledColor">#C8C8C8</Color>
+    <Color x:Key="ShellUnselectedColor">#C8C8C8</Color>
+    <Color x:Key="ShellTabBarBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="ShellTabBarForegroundColor">#512BD4</Color>
+    <Color x:Key="ShellTabBarTitleColor">#512BD4</Color>
+    <Color x:Key="ShellTabBarUnselectedColor">#212121</Color>
+
+    <Color x:Key="NavigationBarBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="NavigationBarTextColor">#C8C8C8</Color>
+    <Color x:Key="NavigationBarIconColor">#C8C8C8</Color>
+
+    <Color x:Key="TabBarBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="TabBarTextColor">#512BD4</Color>
+    <Color x:Key="TabBarUnselectedColor">#C8C8C8</Color>
+    <Color x:Key="TabBarSelectedColor">#141414</Color>
+
+    <!-- Avatar / Flyout -->
+    <Color x:Key="AvatarBorderColor">#E6E6E6</Color>
+    <Color x:Key="AvatarBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="AvatarTextColor">#111111</Color>
+
+</ResourceDictionary>
