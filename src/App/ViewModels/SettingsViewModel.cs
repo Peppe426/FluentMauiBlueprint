@@ -2,7 +2,9 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Globalization;
 using System.Runtime.CompilerServices;
+using App.Services;
 using Microsoft.Maui.Storage;
+using ThemePreference = App.Services.AppTheme;
 using App.Resources.Strings;
 
 namespace App.ViewModels;
@@ -25,7 +27,7 @@ public class SettingsViewModel : INotifyPropertyChanged
         {
             if (SetProperty(ref _selectedThemeOption, value))
             {
-                ApplyTheme(MapThemeKeyToSelection(value.Key));
+                ApplyThemePreference(value.Key);
                 Preferences.Default.Set(PrefTheme, value.Key);
             }
         }
@@ -82,27 +84,17 @@ public class SettingsViewModel : INotifyPropertyChanged
         _selectedLanguageOption = LanguageOptions.FirstOrDefault(o => o.Key == langKey) ?? LanguageOptions[0];
 
         // Apply on startup
-        ApplyTheme(MapThemeKeyToSelection(_selectedThemeOption.Key));
         ApplyLanguage(_selectedLanguageOption.Key);
     }
 
-    private static string MapThemeKeyToSelection(string key) => key switch
+    private static void ApplyThemePreference(string key)
     {
-        "Light" => "Light",
-        "Dark" => "Dark",
-        _ => "System Default"
-    };
-
-    private void ApplyTheme(string selection)
-    {
-        var app = Application.Current;
-        if (app is null) return;
-        app.UserAppTheme = selection switch
+        if (!Enum.TryParse<ThemePreference>(key, out var theme))
         {
-            "Light" => AppTheme.Light,
-            "Dark" => AppTheme.Dark,
-            _ => AppTheme.Unspecified // System Default
-        };
+            theme = ThemePreference.System;
+        }
+
+        ThemeService.ApplyTheme(theme);
     }
 
     private void ApplyLanguage(string pref)
