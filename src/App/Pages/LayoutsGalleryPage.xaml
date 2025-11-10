@@ -1,0 +1,189 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.Pages.LayoutsGalleryPage"
+             Title="Layouts Gallery">
+
+    <Grid RowDefinitions="Auto,*">
+        <!-- Theme Switcher -->
+        <VerticalStackLayout Grid.Row="0" Padding="16" Spacing="12" BackgroundColor="{AppThemeBinding Light=#F0F0F0, Dark=#1E1E1E}">
+            <Label Text="Theme Switcher" FontSize="16" FontAttributes="Bold" />
+            <Picker ItemsSource="{Binding ThemeOptions}"
+                    ItemDisplayBinding="{Binding Display}"
+                    SelectedItem="{Binding SelectedThemeOption}"
+                    Title="Select Theme"
+                    BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#2E2E2E}"
+                    TextColor="{AppThemeBinding Light=#000000, Dark=#FFFFFF}" />
+            <Label Text="{Binding CurrentThemeLabel}" FontSize="12" Opacity="0.7" />
+        </VerticalStackLayout>
+
+        <!-- Layouts Gallery Content -->
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Padding="16" Spacing="16">
+                <!-- GRID EXAMPLES -->
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Grid Layouts" FontSize="20" FontAttributes="Bold" />
+                    <BoxView HeightRequest="2" Color="#512BD4" />
+                    
+                    <Label Text="Basic 2x2 Grid" FontSize="14" FontAttributes="Bold" />
+                    <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto" Padding="4" BackgroundColor="{AppThemeBinding Light=#F6F6F6, Dark=#2E2E2E}">
+                        <Label Text="R0C0" Padding="12" HorizontalTextAlignment="Center" />
+                        <Label Grid.Column="1" Text="R0C1" Padding="12" HorizontalTextAlignment="Center" />
+                        <Label Grid.Row="1" Text="R1C0" Padding="12" HorizontalTextAlignment="Center" />
+                        <Label Grid.Row="1" Grid.Column="1" Text="R1C1" Padding="12" HorizontalTextAlignment="Center" />
+                    </Grid>
+
+                    <Label Text="Column Sizing: *, Auto, Fixed" FontSize="14" FontAttributes="Bold" />
+                    <Grid ColumnDefinitions="*,Auto,100" RowDefinitions="Auto" Padding="4" BackgroundColor="{AppThemeBinding Light=#F6F6F6, Dark=#2E2E2E}">
+                        <Label Text="Expands *" Padding="12" HorizontalTextAlignment="Center" />
+                        <Label Grid.Column="1" Text="Auto" Padding="12" HorizontalTextAlignment="Center" />
+                        <Label Grid.Column="2" Text="100px" Padding="12" HorizontalTextAlignment="Center" FontSize="12"/>
+                    </Grid>
+
+                    <Label Text="Grid with Span" FontSize="14" FontAttributes="Bold" />
+                    <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto" Padding="4" BackgroundColor="{AppThemeBinding Light=#F6F6F6, Dark=#2E2E2E}">
+                        <Label Text="Span 2 &gt;" Padding="12" HorizontalTextAlignment="Center" />
+                        <Label Grid.Column="1" Text="(continued)" Padding="12" HorizontalTextAlignment="Center" />
+                        <Label Grid.Row="1" Grid.ColumnSpan="2" Text="Full Width" Padding="12" HorizontalTextAlignment="Center" />
+                    </Grid>
+                </VerticalStackLayout>
+
+                <!-- STACK LAYOUTS -->
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Stack Layouts" FontSize="20" FontAttributes="Bold" />
+                    <BoxView HeightRequest="2" Color="#512BD4" />
+                    
+                    <Label Text="VerticalStackLayout" FontSize="14" FontAttributes="Bold" />
+                    <VerticalStackLayout Spacing="4" Padding="4" BackgroundColor="{AppThemeBinding Light=#F6F6F6, Dark=#2E2E2E}">
+                        <Label Text="Item 1" Padding="12" BackgroundColor="{AppThemeBinding Light=#E8E8E8, Dark=#3E3E3E}" HorizontalTextAlignment="Center"/>
+                        <Label Text="Item 2" Padding="12" BackgroundColor="{AppThemeBinding Light=#E8E8E8, Dark=#3E3E3E}" HorizontalTextAlignment="Center"/>
+                        <Label Text="Item 3" Padding="12" BackgroundColor="{AppThemeBinding Light=#E8E8E8, Dark=#3E3E3E}" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+
+                    <Label Text="HorizontalStackLayout" FontSize="14" FontAttributes="Bold" />
+                    <HorizontalStackLayout Spacing="4" Padding="4" BackgroundColor="{AppThemeBinding Light=#F6F6F6, Dark=#2E2E2E}">
+                        <Label Text="A" WidthRequest="80" Padding="12" BackgroundColor="{AppThemeBinding Light=#E8E8E8, Dark=#3E3E3E}" HorizontalTextAlignment="Center"/>
+                        <Label Text="B" WidthRequest="80" Padding="12" BackgroundColor="{AppThemeBinding Light=#E8E8E8, Dark=#3E3E3E}" HorizontalTextAlignment="Center"/>
+                        <Label Text="C" WidthRequest="80" Padding="12" BackgroundColor="{AppThemeBinding Light=#E8E8E8, Dark=#3E3E3E}" HorizontalTextAlignment="Center"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+
+                <!-- FLEXLAYOUT EXAMPLES -->
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="FlexLayout" FontSize="20" FontAttributes="Bold" />
+                    <BoxView HeightRequest="2" Color="#512BD4" />
+                    
+                    <Label Text="Wrap with SpaceEvenly" FontSize="14" FontAttributes="Bold" />
+                    <FlexLayout Wrap="Wrap" JustifyContent="SpaceEvenly" AlignItems="Center" Padding="4" BackgroundColor="{AppThemeBinding Light=#F6F6F6, Dark=#2E2E2E}">
+                        <Label Text="Flex 1" WidthRequest="70" Padding="12" BackgroundColor="{AppThemeBinding Light=#E8E8E8, Dark=#3E3E3E}" HorizontalTextAlignment="Center"/>
+                        <Label Text="Flex 2" WidthRequest="70" Padding="12" BackgroundColor="{AppThemeBinding Light=#E8E8E8, Dark=#3E3E3E}" HorizontalTextAlignment="Center"/>
+                        <Label Text="Flex 3" WidthRequest="70" Padding="12" BackgroundColor="{AppThemeBinding Light=#E8E8E8, Dark=#3E3E3E}" HorizontalTextAlignment="Center"/>
+                        <Label Text="Flex 4" WidthRequest="70" Padding="12" BackgroundColor="{AppThemeBinding Light=#E8E8E8, Dark=#3E3E3E}" HorizontalTextAlignment="Center"/>
+                    </FlexLayout>
+
+                    <Label Text="Column Direction (Vertical)" FontSize="14" FontAttributes="Bold" />
+                    <FlexLayout Direction="Column" JustifyContent="Center" AlignItems="Stretch" Padding="4" BackgroundColor="{AppThemeBinding Light=#F6F6F6, Dark=#2E2E2E}">
+                        <Label Text="Row 1" Padding="12" BackgroundColor="{AppThemeBinding Light=#E8E8E8, Dark=#3E3E3E}" HorizontalTextAlignment="Center"/>
+                        <Label Text="Row 2" Padding="12" BackgroundColor="{AppThemeBinding Light=#E8E8E8, Dark=#3E3E3E}" HorizontalTextAlignment="Center"/>
+                        <Label Text="Row 3" Padding="12" BackgroundColor="{AppThemeBinding Light=#E8E8E8, Dark=#3E3E3E}" HorizontalTextAlignment="Center"/>
+                    </FlexLayout>
+
+                    <Label Text="Row Direction with SpaceBetween" FontSize="14" FontAttributes="Bold" />
+                    <FlexLayout Direction="Row" JustifyContent="SpaceBetween" AlignItems="Center" Padding="4" BackgroundColor="{AppThemeBinding Light=#F6F6F6, Dark=#2E2E2E}" HeightRequest="60">
+                        <Label Text="Left" Padding="12" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <Label Text="Center" Padding="12" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <Label Text="Right" Padding="12" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                    </FlexLayout>
+                </VerticalStackLayout>
+
+                <!-- ABSOLUTELAYOUT EXAMPLES -->
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="AbsoluteLayout" FontSize="20" FontAttributes="Bold" />
+                    <BoxView HeightRequest="2" Color="#512BD4" />
+                    
+                    <Label Text="Fixed Positioning" FontSize="14" FontAttributes="Bold" />
+                    <AbsoluteLayout HeightRequest="180" BackgroundColor="{AppThemeBinding Light=#F6F6F6, Dark=#2E2E2E}">
+                        <Label Text="Top-Left" AbsoluteLayout.LayoutBounds="10,10,100,50" AbsoluteLayout.LayoutFlags="None" FontSize="12" HorizontalTextAlignment="Center"/>
+                        <Label Text="Bottom-Right" AbsoluteLayout.LayoutBounds="1,1,100,50" AbsoluteLayout.LayoutFlags="XProportional,YProportional" FontSize="12" HorizontalTextAlignment="Center"/>
+                        <Label Text="Center" AbsoluteLayout.LayoutBounds="0.5,0.5,120,60" AbsoluteLayout.LayoutFlags="All" FontSize="12" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                    </AbsoluteLayout>
+
+                    <Label Text="Proportional Layout" FontSize="14" FontAttributes="Bold" />
+                    <AbsoluteLayout HeightRequest="140" BackgroundColor="{AppThemeBinding Light=#F6F6F6, Dark=#2E2E2E}">
+                        <BoxView AbsoluteLayout.LayoutBounds="0,0,0.5,1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="#512BD4" Opacity="0.3"/>
+                        <BoxView AbsoluteLayout.LayoutBounds="0.5,0,0.5,1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="#8A6FE8" Opacity="0.3"/>
+                        <Label Text="50% / 50%" AbsoluteLayout.LayoutBounds="0.5,0.5,200,50" AbsoluteLayout.LayoutFlags="All" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold"/>
+                    </AbsoluteLayout>
+                </VerticalStackLayout>
+
+                <!-- PANEL PATTERNS -->
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Panel Patterns" FontSize="20" FontAttributes="Bold" />
+                    <BoxView HeightRequest="2" Color="#512BD4" />
+                    
+                    <Label Text="Header / Body / Footer" FontSize="14" FontAttributes="Bold" />
+                    <Grid RowDefinitions="Auto,*,Auto" HeightRequest="180" BackgroundColor="{AppThemeBinding Light=#F6F6F6, Dark=#2E2E2E}">
+                        <Label Grid.Row="0" Text="Header" Padding="12" BackgroundColor="#512BD4" TextColor="White" HorizontalTextAlignment="Center"/>
+                        <Label Grid.Row="1" Text="Body Content (Expands)" Padding="12" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <Label Grid.Row="2" Text="Footer" Padding="12" BackgroundColor="#8A6FE8" TextColor="White" HorizontalTextAlignment="Center"/>
+                    </Grid>
+
+                    <Label Text="Left Sidebar / Main Content" FontSize="14" FontAttributes="Bold" />
+                    <Grid ColumnDefinitions="120,*" HeightRequest="140" BackgroundColor="{AppThemeBinding Light=#F6F6F6, Dark=#2E2E2E}">
+                        <VerticalStackLayout Grid.Column="0" Padding="8" Spacing="4" BackgroundColor="{AppThemeBinding Light=#E8E8E8, Dark=#3E3E3E}">
+                            <Label Text="Nav 1" FontSize="12"/>
+                            <Label Text="Nav 2" FontSize="12"/>
+                            <Label Text="Nav 3" FontSize="12"/>
+                        </VerticalStackLayout>
+                        <Label Grid.Column="1" Text="Main Content" Padding="12" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                    </Grid>
+
+                    <Label Text="3-Column Dashboard" FontSize="14" FontAttributes="Bold" />
+                    <Grid ColumnDefinitions="*,*,*" HeightRequest="120" ColumnSpacing="4" RowSpacing="4" BackgroundColor="{AppThemeBinding Light=#F6F6F6, Dark=#2E2E2E}">
+                        <VerticalStackLayout Grid.Column="0" Padding="8" HorizontalOptions="Center" VerticalOptions="Center">
+                            <Label Text="60" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                            <Label Text="Users" FontSize="12" HorizontalTextAlignment="Center"/>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="1" Padding="8" HorizontalOptions="Center" VerticalOptions="Center">
+                            <Label Text="42" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                            <Label Text="Views" FontSize="12" HorizontalTextAlignment="Center"/>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="2" Padding="8" HorizontalOptions="Center" VerticalOptions="Center">
+                            <Label Text="18" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                            <Label Text="Clicks" FontSize="12" HorizontalTextAlignment="Center"/>
+                        </VerticalStackLayout>
+                    </Grid>
+
+                    <Label Text="Card Grid (3 Columns)" FontSize="14" FontAttributes="Bold" />
+                    <Grid ColumnDefinitions="*,*,*" RowDefinitions="Auto,Auto" ColumnSpacing="8" RowSpacing="8" BackgroundColor="{AppThemeBinding Light=#F6F6F6, Dark=#2E2E2E}" Padding="4">
+                        <Label Grid.Row="0" Grid.Column="0" Text="Card 1" Padding="8" HorizontalTextAlignment="Center"/>
+                        <Label Grid.Row="0" Grid.Column="1" Text="Card 2" Padding="8" HorizontalTextAlignment="Center"/>
+                        <Label Grid.Row="0" Grid.Column="2" Text="Card 3" Padding="8" HorizontalTextAlignment="Center"/>
+                        <Label Grid.Row="1" Grid.Column="0" Text="Card 4" Padding="8" HorizontalTextAlignment="Center"/>
+                        <Label Grid.Row="1" Grid.Column="1" Text="Card 5" Padding="8" HorizontalTextAlignment="Center"/>
+                        <Label Grid.Row="1" Grid.Column="2" Text="Card 6" Padding="8" HorizontalTextAlignment="Center"/>
+                    </Grid>
+                </VerticalStackLayout>
+
+                <!-- FORM LAYOUT -->
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Form Layout" FontSize="20" FontAttributes="Bold" />
+                    <BoxView HeightRequest="2" Color="#512BD4" />
+                    
+                    <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto,Auto" ColumnSpacing="8" RowSpacing="8" Padding="8" BackgroundColor="{AppThemeBinding Light=#F6F6F6, Dark=#2E2E2E}">
+                        <Label Grid.Row="0" Grid.Column="0" Text="Name:" VerticalOptions="Center" FontAttributes="Bold"/>
+                        <Entry Grid.Row="0" Grid.Column="1" Placeholder="Enter name"/>
+                        
+                        <Label Grid.Row="1" Grid.Column="0" Text="Email:" VerticalOptions="Center" FontAttributes="Bold"/>
+                        <Entry Grid.Row="1" Grid.Column="1" Placeholder="Enter email" Keyboard="Email"/>
+                        
+                        <Label Grid.Row="2" Grid.Column="0" Text="Message:" VerticalOptions="Start" Margin="0,8,0,0" FontAttributes="Bold"/>
+                        <Editor Grid.Row="2" Grid.Column="1" Placeholder="Enter message" HeightRequest="80"/>
+                    </Grid>
+                </VerticalStackLayout>
+
+                <Label Text="End of Gallery" FontSize="12" Opacity="0.5" Padding="0,20" HorizontalTextAlignment="Center"/>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>
