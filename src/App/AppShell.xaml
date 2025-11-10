@@ -53,6 +53,12 @@
             ContentTemplate="{DataTemplate pages:UserPage}" />
     </FlyoutItem>
 
+    <!-- NEW: Layouts Gallery (no Tab wrapper) -->
+    <FlyoutItem Title="Layouts" Icon="dotnet_bot.png" Route="layouts">
+        <ShellContent
+            Title="Layouts"
+            ContentTemplate="{DataTemplate pages:LayoutsGalleryPage}" />
+    </FlyoutItem>
 
     <!-- Footer item to place Settings at the bottom of flyout -->
     <FlyoutItem Title="Settings" Route="settings" IsVisible="False">
