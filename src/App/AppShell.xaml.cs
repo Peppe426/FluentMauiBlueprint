@@ -16,8 +16,15 @@ public partial class AppShell : Shell
         await Shell.Current.GoToAsync("//user", false);
     }
 
-    private async void OnSettingsClicked(object? sender, EventArgs e)
+    private void OnSettingsClicked(object? sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("settings", false);
+        // find the hidden Settings FlyoutItem
+        var settingsItem = this.Items.FirstOrDefault(i => i.Route == "settings");
+        if (settingsItem != null)
+        {
+            Shell.Current.CurrentItem = settingsItem; // directly switch top-level item
+        }
     }
+
+
 }

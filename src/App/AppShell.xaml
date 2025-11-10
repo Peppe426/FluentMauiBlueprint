@@ -53,17 +53,30 @@
             ContentTemplate="{DataTemplate pages:UserPage}" />
     </FlyoutItem>
 
-    
 
     <!-- Footer item to place Settings at the bottom of flyout -->
+    <FlyoutItem Title="Settings" Route="settings" IsVisible="False">
+        <ShellContent ContentTemplate="{DataTemplate pages:SettingsPage}" />
+    </FlyoutItem>
+
     <Shell.FlyoutFooter>
-        <Grid Padding="12">
+
+        <Grid HeightRequest="80" BackgroundColor="Transparent" Padding="16">
             <Grid.GestureRecognizers>
-                <TapGestureRecognizer Tapped="OnSettingsClicked" NumberOfTapsRequired="1" />
+                <TapGestureRecognizer Tapped="OnUserHeaderTapped" NumberOfTapsRequired="1" />
             </Grid.GestureRecognizers>
             <HorizontalStackLayout Spacing="12" VerticalOptions="Center">
-                <Image Source="settings.png" HeightRequest="20" WidthRequest="20" />
-                <Label Text="{Binding SettingsTitle}" FontSize="14" VerticalTextAlignment="Center" />
+                <!-- Avatar using .NET MAUI Community Toolkit -->
+                <toolkit:AvatarView HeightRequest="40"
+                            WidthRequest="40"
+                            CornerRadius="20"
+                            ImageSource="dotnet_bot.png"
+                            BorderWidth="1"
+                            BorderColor="{AppThemeBinding Light={StaticResource DividerLight}, Dark={StaticResource DividerDark}}" />
+                <VerticalStackLayout Spacing="0" VerticalOptions="Center">
+                    <Label Text="John Doe" FontSize="16" />
+                    <Label Text="{Binding ViewProfileTitle}" FontSize="12" Opacity="0.7" />
+                </VerticalStackLayout>
             </HorizontalStackLayout>
         </Grid>
     </Shell.FlyoutFooter>
