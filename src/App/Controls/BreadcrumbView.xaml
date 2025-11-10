@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView x:Class="App.Controls.BreadcrumbView"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Name="Root">
+    <HorizontalStackLayout Spacing="6" Padding="0">
+        <Label Text="Home"/>
+        <Label Text="&gt;" Opacity="0.6"/>
+        <Label Text="{Binding Current, Source={x:Reference Root}}"/>
+    </HorizontalStackLayout>
+</ContentView>
